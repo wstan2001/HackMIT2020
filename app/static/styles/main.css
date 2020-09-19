@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: #f2f6e9;
+  background: #efe9f6;
 }
 /*--- navigation bar ---*/
 .navbar {
@@ -22,7 +22,3 @@ body {
   justify-content: flex-end;
 }
 
-div {
-  height: 1000px;
-
-}
