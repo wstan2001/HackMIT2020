@@ -14,6 +14,7 @@ L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //wow for some reason I don't need to load markers from the JSON file?
 for (var i = 0; i < markers.length; i++) {
   L.marker( [markers[i].lat, markers[i].lng] )
-      .bindPopup( '<p">' + markers[i].name + '</p>' )
+      .bindPopup( '<p>' + markers[i].name + '</p>' + 
+            '<p> Estimated wait time: ?? </p>' )
       .addTo( map );
 }

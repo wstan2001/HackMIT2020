@@ -1,0 +1,52 @@
+markers = [
+    {
+        "name": "Alamance County Office Annex Building (Auditorium)",
+        "lat": 36.069,
+        "lng": -79.402,
+    },
+    {
+        "name": "Elmira Community Center",
+        "lat": 36.107,
+        "lng": -79.443,
+    },
+    {
+        "name": "Holly Hill Mall",
+        "lat": 36.078,
+        "lng": -79.486,
+    },
+    {
+        "name": "Kernodle Senior Center",
+        "lat": 36.079,
+        "lng": -79.450,
+    },
+    {
+        "name": "Mebane Arts and Community Center",
+        "lat": 36.089,
+        "lng": -79.285,
+    },
+    /*{
+        "name": "Test6",
+        "lat": ,
+        "lng": ,
+    },
+    {
+        "name": "Test7",
+        "lat": ,
+        "lng": ,
+    },
+    {
+        "name": "Test8",
+        "lat": ,
+        "lng": ,
+    },
+    {
+        "name": "Test9",
+        "lat": ,
+        "lng": ,
+    },
+    {
+        "name": "Test10",
+        "lat": ,
+        "lng": ,
+    },*/
+];
