@@ -5,6 +5,10 @@ from flask import render_template
 def poggers():
     return render_template('index.html', title = 'COVID')
 
+@app.route('/about')
+def poggers2():
+    return render_template('about.html', title = 'COVID')
+
 @app.route('/donkey')
 def donkey():
     return '''
