@@ -1,6 +1,10 @@
 $(document).ready(function() {
     $("#post_button").click(function() {
-        console.log("clicked!");
+        var date = new Date();
+        var timestamp = date.getDate() + "/" + (date.getMonth() + 1) + " " 
+                        + date.getHours() + ":" + date.getMinutes();
+
+        console.log("clicked! At " + timestamp);
 
         //needs to send over relevant data to the database
 
