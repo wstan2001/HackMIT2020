@@ -12,10 +12,8 @@ $(document).ready(function() {
 
         //also needs to update marker popups
 
-        console.log("moo!");
-        var time = document.getElementById("wait_time").value;
-        console.log(time);
-        document.getElementById("test").innerHTML = "You clicked it!";
+        var waittime = document.getElementById("wait_time").value;
+        console.log(waittime);
     });
 });
 
