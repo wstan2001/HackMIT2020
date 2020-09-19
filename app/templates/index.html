@@ -8,16 +8,13 @@
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
    crossorigin=""/>
 
-   <!--<link rel="stylesheet" href="map.css">-->
+   <link rel="stylesheet" href="../static/map.css">
 
    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
 
 
-   <style>
-    #map{ width: 900px; height: 500px; }
-  </style>
 </head>
 
 <body>
@@ -25,22 +22,10 @@
 <h1> Voting Site Map</h1>
 <div id="map"></div>
 
-<!--<script type="text/javascript" src="../map.js"></script>-->
-
-<script>
-  // initialize the map
-  var map = L.map('map').setView([42.35, -71.08], 13);
-
-  // load a tile layer
-  L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
-    {
-      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
-      maxZoom: 17,
-      minZoom: 9
-    }).addTo(map);
-</script>
+<script type="text/javascript" src="../static/map.js"></script>
 
 <p>Please enter nearby voting sites.</p>
+
 
 </body>
 </html>
