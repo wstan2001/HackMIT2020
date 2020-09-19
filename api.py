@@ -1,9 +1,9 @@
-from flask import Flask #, request
+from flask import Flask, request
+from app import app
 from flask_restful import reqparse, Api, Resource
 
 ## set up flask
 
-app = Flask(__name__)
 api = Api(app)
 
 parser = reqparse.RequestParser()
