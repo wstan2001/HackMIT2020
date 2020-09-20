@@ -1,14 +1,16 @@
 from app import app
 from flask import render_template
+from app.models import Polls
 
 @app.route('/')
 def poggers():
+    db = Polls.query.all()
+    dict = {poll.name: {'latest': poll.latest, 'timestamp': poll.timestamp} for poll in db}
+    print(dict)
     return render_template('index.html', title = 'COVID')
 
-
-
-@app.route('/donkey')
-def GET():
+@app.route('/submit')
+def donkey():
     return '''
     <html>
     <body>
