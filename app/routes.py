@@ -8,6 +8,15 @@ def poggers():
     dict = {poll.name: {'latest': poll.latest, 'timestamp': poll.timestamp} for poll in database}
     return render_template('index.html', title = 'COVID')
 
+@app.route('/about')
+def poggers2():
+    return render_template('about.html')
+
+@app.route('/contact')
+def poggers3():
+    return render_template('contact.html')
+
+
 @app.route("/<any(plain, jquery, fetch):js>")
 def index(js):
     return render_template("{0}.html".format(js), js=js)
