@@ -36,3 +36,10 @@ body {
   justify-content: center;
 }
 
+.textbox{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 50px;
+}
+
