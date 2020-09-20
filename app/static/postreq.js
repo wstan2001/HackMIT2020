@@ -42,7 +42,6 @@ $(document).ready(function() {
             '<p> Estimated wait time: ' + waittime + ' </p>' + 
             '<p> Last Updated: ' + timestamp + ' </p?');
         }
-<<<<<<< HEAD
 
 
         $.ajax({
@@ -55,8 +54,6 @@ $(document).ready(function() {
             });
 
 
-=======
->>>>>>> 55bb504961a184c41861b6cde119543390b779f1
     });
 });
 

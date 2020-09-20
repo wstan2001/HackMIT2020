@@ -57,28 +57,33 @@
   </nav>
 
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-     <div class="col-sm-6">
-        <h5 class = "flex-container"> Current Location: <p id="curr_loc"> None</p></h5>
+     <div class="col-sm-6" margin-left=100px>
+        <h5 class="flex-container"> Current Location: </h5> 
+        <p class="flex-container" id="curr_loc"> None</p>
      </div>
-    <div class="col-sm-4">
-        <input class = "flex-container" type="number" id="wait_time" placeholder="Report Wait Time in Minutes">
-     </div>
-      <div class="col-sm-2">
-      <button type="button" id="post_button" class="btn btn-secondary" style="margin:20px;">Report Wait Time</button>
+    <div class="col-sm-3">
+        <div class="flex-container">
+          <input class="flex-container" type="number" id="wait_time" placeholder="Report Wait Time in Minutes">
+        </div>
       </div>
+    <div class="col-sm-2">
+      <div class="flex-container"></div>
+        <button type="button" id="post_button" class="btn btn-secondary" style="margin:20px;">Report Wait Time</button>
+      </div>
+    </div>
     </div>
   </div>
   
 
 
 <!--map stuff-->
-<div class="flex-container">
-  <div class="row">
+<!--<div class="flex-container">
+  <div class="row">-->
   <div id="map"></div>
-  </div>
-</div>
+  <!--</div>
+</div>-->
 
 <!--map scripts-->
 <script type="text/javascript" src="../static/locations.json"></script>
