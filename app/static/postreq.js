@@ -40,6 +40,8 @@ $(document).ready(function() {
             '<p> Estimated wait time: ' + time + ' </p>' + 
             '<p> Last Updated: ' + timestamp + ' </p?');
         }
+
+        //hi
     });
 });
 
