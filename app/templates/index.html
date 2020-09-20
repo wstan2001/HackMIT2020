@@ -23,8 +23,8 @@
    crossorigin=""></script>
 
    <!--script codes-->
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+   integrity=""
    crossorigin="anonymous"></script>
   <script src="../static/postreq.js"></script>
 
@@ -61,7 +61,7 @@
     <p>A guide to how long wait times are at your local polling stations.</p>
     <br>
     <h3> Current Location: <p id="curr_loc"> None</p></h3>
-      <input type="text" id="wait_time" placeholder="Enter wait time"></input>
+      <input type="number" id="wait_time" placeholder="Enter Wait Time in Minutes">
       <button type="button" id="post_button" class="btn btn-secondary" style="margin:20px;">Enter wait time</button>
     <p id="test"> hi </p>
   </div>
@@ -74,6 +74,8 @@
 <!--map scripts-->
 <script type="text/javascript" src="../static/locations.json"></script>
 <script type="text/javascript" src="../static/map.js"></script>
+
+
 
 <div class="container">
   <div class="row">

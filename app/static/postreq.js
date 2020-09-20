@@ -1,5 +1,3 @@
-time_list = [];
-
 $(document).ready(function() {
     $("#post_button").click(function() {
         var date = new Date();
@@ -12,8 +10,8 @@ $(document).ready(function() {
 
         //also needs to update marker popups
 
-        var time = document.getElementById("wait_time").value;
-        console.log(time);
+        var waittime = document.getElementById("wait_time").value;
+        console.log(waittime);
 
         var location = document.getElementById("curr_loc").innerHTML;
         console.log("Location: " + location);
@@ -37,9 +35,11 @@ $(document).ready(function() {
         }
         else {
             markers[i]._popup.setContent('<p>' + location + '</p>' + 
-            '<p> Estimated wait time: ' + time + ' </p>' + 
+            '<p> Estimated wait time: ' + waittime + ' </p>' + 
             '<p> Last Updated: ' + timestamp + ' </p?');
         }
+        
+
     });
 });
 
