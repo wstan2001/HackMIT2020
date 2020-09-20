@@ -32,6 +32,7 @@
    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
    crossorigin="anonymous"></script>  
 
+
 </head>
 
 <body>
@@ -67,6 +68,7 @@
      </div>
       <div class="col-sm-2">
       <button type="button" id="post_button" class="btn btn-secondary" style="margin:20px;">Report Wait Time</button>
+
       </div>
     </div>
   </div>
@@ -80,11 +82,13 @@
   </div>
 </div>
 
+
+
 <!--map scripts-->
 <script type="text/javascript" src="../static/locations.json"></script>
 <script type="text/javascript" src="../static/map.js"></script>
 
-
+<script>kek = getData('{{data|tojson}}')</script>
 
 
 </body>

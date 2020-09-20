@@ -5,12 +5,10 @@ from app.models import Polls
 @app.route('/')
 def poggers():
     database = Polls.query.all()
-    dict = {poll.name: {'latest': poll.latest, 'timestamp': poll.timestamp} for poll in database}
-    return render_template('index.html', title = 'COVID')
+    data = {poll.name: {'latest': poll.latest, 'timestamp': poll.timestamp} for poll in database}
+    return render_template('index.html', data = data)
 
-@app.route("/<any(plain, jquery, fetch):js>")
-def index(js):
-    return render_template("{0}.html".format(js), js=js)
+
 
 
 
@@ -21,10 +19,13 @@ def dbpost():
         update = Polls.query.filter_by(name=data['location']).first()
         if update is None:
             new = Polls(data['location'], data['waittime'], data['timestamp'])
-            print(new)
             db.session.add(new)
             db.session.commit()
-    return data
+        else:
+            update.latest = data['waittime']
+            update.timestamp = data['timestamp']
+            db.session.commit()
+    return 'success'
     
 
 
