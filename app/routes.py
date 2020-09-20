@@ -1,13 +1,32 @@
-from app import app
-from flask import render_template
+from app import app, db
+from flask import render_template, request, jsonify
 from app.models import Polls
 
 @app.route('/')
 def poggers():
-    db = Polls.query.all()
-    dict = {poll.name: {'latest': poll.latest, 'timestamp': poll.timestamp} for poll in db}
-    print(dict)
+    database = Polls.query.all()
+    dict = {poll.name: {'latest': poll.latest, 'timestamp': poll.timestamp} for poll in database}
     return render_template('index.html', title = 'COVID')
+
+@app.route("/<any(plain, jquery, fetch):js>")
+def index(js):
+    return render_template("{0}.html".format(js), js=js)
+
+
+
+@app.route('/dbpost', methods=['POST'])
+def dbpost():
+    if request.method == 'POST':
+        data = request.get_json()
+        update = Polls.query.filter_by(name=data['location']).first()
+        if update is None:
+            new = Polls(data['location'], data['waittime'], data['timestamp'])
+            print(new)
+            db.session.add(new)
+            db.session.commit()
+    return data
+    
+
 
 @app.route('/submit')
 def donkey():
