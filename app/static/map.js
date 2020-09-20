@@ -1,8 +1,8 @@
 var map = L.map( 'map', {
-    center: [36.1, -79.4],
+    center: [35.7, -79.4],
     maxZoom: 18,
     minZoom: 4,
-    zoom: 11
+    zoom: 7
 });
 
 L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -10,11 +10,7 @@ L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     subdomains: ['a','b','c']
 }).addTo( map );
 
-function getData(data){
-  return data
-}
 
-console.log(data)
 var markers = new Array();
 
 //wow for some reason I don't need to load markers from the JSON file?

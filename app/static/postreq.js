@@ -2,7 +2,9 @@ $(document).ready(function() {
     $("#post_button").click(function() {
         var date = new Date();
         var timestamp = date.getFullYear() + '-' + (date.getMonth()+1) + '-' + date.getDay() + " " 
-                        + date.getHours() + ":" + date.getMinutes() +':'+date.getSeconds();
+                        + (date.getHours() > 9 ? date.getHours() : '0' + date.getHours())
+                         + ":" + (date.getMinutes() > 9 ? date.getMinutes() : '0' + date.getMinutes())
+                         +':'+ (date.getSeconds() > 9 ? date.getSeconds() : '0' + date.getSeconds());
 
         console.log("clicked! At " + timestamp);
 
@@ -39,14 +41,14 @@ $(document).ready(function() {
             markers[i]._popup.setContent('<p>' + location + '</p>' + 
             '<p> Estimated wait time: ' + waittime + ' </p>' + 
             '<p> Last Updated: ' + timestamp + ' </p?');
-            $.ajax({
+            /*$.ajax({
                 type: "POST",
                 contentType: "application/json;charset=utf-8",
                 url: "/dbpost",
                 traditional: "true",
                 data: JSON.stringify({location, waittime, timestamp}),
                 dataType: "json"
-                });
+                });*/
         }
 
     });
