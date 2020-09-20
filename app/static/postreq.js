@@ -1,17 +1,10 @@
 $(document).ready(function() {
     $("#post_button").click(function() {
         var date = new Date();
-<<<<<<< HEAD
+
         var timestamp = date.getFullYear() + '-' + (date.getMonth()+1) + '-' + date.getDay() + " " 
                         + date.getHours() + ":" + date.getMinutes() +':'+date.getSeconds();
-=======
-        var timestamp = date.getDate() + "/" + (date.getMonth() + 1) + " " 
-                        + (date.getHours() > 9 ?
-                        date.getHours() : '0' + date.getHours()) + ":" + 
-                        (date.getMinutes() > 9 ? date.getMinutes() : '0'
-                         + date.getMinutes());
-        
->>>>>>> 55bb504961a184c41861b6cde119543390b779f1
+
 
         console.log("clicked! At " + timestamp);
 
