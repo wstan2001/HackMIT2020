@@ -1,14 +1,18 @@
 var map = L.map( 'map', {
-    center: [35.7, -79.4],
+    center: [36.1, -79.4],
     maxZoom: 18,
     minZoom: 4,
-    zoom: 7
+    zoom: 11
 });
 
 L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     subdomains: ['a','b','c']
 }).addTo( map );
+
+function getData(data){
+
+  console.log(data);
 
 
 var markers = new Array();
@@ -33,4 +37,6 @@ for (let i = 0; i < locs.length; i++) {
         console.log(locs[i].name);
         $("#curr_loc").html(locs[i].name);
       });*/
+}
+return data;
 }
