@@ -3,4 +3,6 @@ The goal of this project is to provide a more informative experience for people 
 
 First, pull up the map to see what early polling sites exist around you. On each one, you can see how long the last person took to make it through the voting line and at what time they reported it, so you can be prepared before you go to the polls! Once you get to your polling location, make sure to keep track of the time. After you leave, just insert the time in minutes it took you to vote and help others just like you stay updated on the lines!
 
+This project wouldn't have been possible without the Leaflet, an open-source JS library that allowed us to create all our maps: https://leafletjs.com/
+
 One last thing, don't forget to vote! Every vote matters and we hope you enjoy our site.
