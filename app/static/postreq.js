@@ -1,5 +1,3 @@
-time_list = [];
-
 $(document).ready(function() {
     $("#post_button").click(function() {
         var date = new Date();
@@ -14,6 +12,12 @@ $(document).ready(function() {
 
         var waittime = document.getElementById("wait_time").value;
         console.log(waittime);
+
+        const url = "/donkey";
+        $.ajax({
+            url : url
+        });
+
     });
 });
 
