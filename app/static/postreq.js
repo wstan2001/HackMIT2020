@@ -13,10 +13,13 @@ $(document).ready(function() {
         var waittime = document.getElementById("wait_time").value;
         console.log(waittime);
 
-        const url = "/donkey";
-        $.ajax({
-            url : url
-        });
+        //const url = "/donkey";
+        //$.ajax({
+            //url : url,
+            //type: "POST",
+            //data: {title: waittime}
+
+        //});
 
     });
 });
