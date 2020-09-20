@@ -12,10 +12,34 @@ $(document).ready(function() {
 
         //also needs to update marker popups
 
-        console.log("moo!");
         var time = document.getElementById("wait_time").value;
         console.log(time);
-        document.getElementById("test").innerHTML = "You clicked it!";
+
+        var location = document.getElementById("curr_loc").innerHTML;
+        console.log("Location: " + location);
+
+
+        //need to update label of marker with new wait time
+        var idx = -1;
+        for (var i = 0; i < markers.length; i++) {
+            var marker_loc = markers[i]._popup.getContent();    //temp variable
+            marker_loc = marker_loc.replace(/<[^>]*>/g, '');
+            if (marker_loc.length < location.length) {
+                continue;
+            }
+            else if (location === marker_loc.slice(0, location.length)) {
+                idx = i;
+                break;
+            }
+        }
+        if (idx === -1) {
+            console.log("Something very bad happened; location posted to not found");
+        }
+        else {
+            markers[i]._popup.setContent('<p>' + location + '</p>' + 
+            '<p> Estimated wait time: ' + time + ' </p>' + 
+            '<p> Last Updated: ' + timestamp + ' </p?');
+        }
     });
 });
 
