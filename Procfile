@@ -1,1 +1,1 @@
-web: gunicorn app.__init__:app --log-file - --log-level debug
+web: app.__init__:app --log-file - --log-level debug
