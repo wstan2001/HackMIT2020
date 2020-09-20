@@ -9,6 +9,21 @@ def poggers():
     return render_template('index.html', data = data)
 
 
+<<<<<<< HEAD
+=======
+@app.route('/about')
+def poggers2():
+    return render_template('about.html')
+
+@app.route('/contact')
+def poggers3():
+    return render_template('contact.html')
+
+
+@app.route("/<any(plain, jquery, fetch):js>")
+def index(js):
+    return render_template("{0}.html".format(js), js=js)
+>>>>>>> f41bfc3bea8a675d845111a632e5080cad1c4bb7
 
 
 
