@@ -24,29 +24,59 @@ locs = [
         "lat": 36.089,
         "lng": -79.285,
     },
-    /*{
-        "name": "Test6",
-        "lat": ,
-        "lng": ,
+    {
+        "name": "Alexander Senior Center",
+        "lat": 35.913,
+        "lng": -81.188,
     },
     {
-        "name": "Test7",
-        "lat": ,
-        "lng": ,
+        "name": "Bethlehem Community Fire/Rescue",
+        "lat": 35.844,
+        "lng": -81.310,
     },
     {
-        "name": "Test8",
-        "lat": ,
-        "lng": ,
+        "name": "Hiddenite Volunteer Fire Department",
+        "lat": 35.902,
+        "lng": -81.093,
     },
     {
-        "name": "Test9",
-        "lat": ,
-        "lng": ,
+        "name": "Alleghany County Board of Elections Office",
+        "lat": 36.502,
+        "lng": -81.116,
     },
     {
-        "name": "Test10",
-        "lat": ,
-        "lng": ,
-    },*/
+        "name": "Anson County Board of Elections Office",
+        "lat": 34.962,
+        "lng": -80.076,
+    },
+    {
+        "name": "Ashe Agricultural Services Building",
+        "lat": 36.419,
+        "lng": -81.459,
+    },
+    {
+        "name": "Avery County Dive in Pool Complex",
+        "lat": 36.082,
+        "lng": -81.924,
+    },
+    {
+        "name": "Aurora Community Center",
+        "lat": 35.305,
+        "lng": -76.786,
+    },
+    {
+        "name": "Beaufort County Board of Elections Office",
+        "lat": 35.550,
+        "lng": -77.035,
+    },
+    {
+        "name": "John A Wilkinson Center",
+        "lat": 35.541,
+        "lng": -76.624,
+    },
+    {
+        "name": "Chocowinity Fire Department",
+        "lat": 35.509,
+        "lng": -77.093,
+    },
 ];

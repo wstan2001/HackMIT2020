@@ -2,7 +2,11 @@ $(document).ready(function() {
     $("#post_button").click(function() {
         var date = new Date();
         var timestamp = date.getDate() + "/" + (date.getMonth() + 1) + " " 
-                        + date.getHours() + ":" + date.getMinutes();
+                        + (date.getHours() > 9 ?
+                        date.getHours() : '0' + date.getHours()) + ":" + 
+                        (date.getMinutes() > 9 ? date.getMinutes() : '0'
+                         + date.getMinutes());
+        
 
         console.log("clicked! At " + timestamp);
 
