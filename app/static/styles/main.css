@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: #f2f6e9;
+  background: #f7f5f7;
 }
 /*--- navigation bar ---*/
 .navbar {
@@ -20,5 +20,17 @@ body {
 }
 .navbar-collapse {
   justify-content: flex-end;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.flex-container {
+  width: 100%;
+  padding: 10px;
 }
 
