@@ -5,8 +5,10 @@ from flask import render_template
 def poggers():
     return render_template('index.html', title = 'COVID')
 
-@app.route('/submit')
-def donkey():
+
+
+@app.route('/donkey')
+def GET():
     return '''
     <html>
     <body>

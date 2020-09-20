@@ -11,9 +11,16 @@ L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo( map );
 
 
+
+
 //wow for some reason I don't need to load markers from the JSON file?
-for (var i = 0; i < markers.length; i++) {
+//let here is important, won't work if i is var
+for (let i = 0; i < markers.length; i++) {
   L.marker( [markers[i].lat, markers[i].lng] )
-      .bindPopup( '<p">' + markers[i].name + '</p>' )
-      .addTo( map );
+      .bindPopup( '<p>' + markers[i].name + '</p>' + 
+            '<p> Estimated wait time: ?? </p>' )
+      .addTo( map ).on('click', function() {
+        console.log(markers[i].name);
+        $("#curr_loc").html(markers[i].name);
+      });
 }

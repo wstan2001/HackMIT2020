@@ -22,6 +22,16 @@
   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
 
+   <!--script codes-->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+   integrity=""
+   crossorigin="anonymous"></script>
+  <script src="../static/postreq.js"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+   integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+   crossorigin="anonymous"></script>  
+
 </head>
 
 <body>
@@ -49,8 +59,11 @@
   <div class="jumbotron text-center">
     <h1>vote-guide</h1>
     <p>A guide to how long wait times are at your local polling stations.</p>
-      <button type="button" class="btn btn-secondary" style="margin:20px;">Enter wait time</button>
-      <button type="button" class="btn btn-secondary">Find out wait time</button>
+    <br>
+    <h3> Current Location: <p id="curr_loc"> None</p></h3>
+      <input type="number" id="wait_time" placeholder="Enter Wait Time in Minutes">
+      <button type="button" id="post_button" class="btn btn-secondary" style="margin:20px;">Enter wait time</button>
+    <script src="../static/postreq.js"></script>
   </div>
   
 
@@ -58,9 +71,11 @@
 <!--map stuff-->
 <div id="map"></div>
 
+<!--map scripts-->
 <script type="text/javascript" src="../static/locations.json"></script>
 <script type="text/javascript" src="../static/map.js"></script>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <div class="jumbotron text-center">
   <h1>vote-guide</h1>
@@ -71,6 +86,8 @@
 =======
 >>>>>>> 2ac32aaa08cf4cb7901b968dc42e58bb93d32126
 
+=======
+>>>>>>> a8daa161c615af3e3ba41c517c52ba757e31a296
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
@@ -87,19 +104,6 @@
     </div>
   </div>
 </div>
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-
-<body>
-
 
 
 
