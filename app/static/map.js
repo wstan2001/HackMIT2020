@@ -10,12 +10,12 @@ L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     subdomains: ['a','b','c']
 }).addTo( map );
 
-function getData(data){
-
-  console.log(data);
 
 
 var markers = new Array();
+function getData(data){
+
+  console.log(data);
 
 //wow for some reason I don't need to load markers from the JSON file?
 //let here is important, won't work if i is var
