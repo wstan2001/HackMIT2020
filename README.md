@@ -5,5 +5,4 @@ First, pull up the map to see what early polling sites exist around you. On each
 
 One last thing, don't forget to vote! Every vote matters and we hope you enjoy our site.
 
-#insert more info above and describe the different folders here
 # How Our Code Works
