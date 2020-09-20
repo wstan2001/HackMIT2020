@@ -25,6 +25,12 @@ body {
 .center {
   margin: auto;
   width: 60%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.flex-container {
+  width: 100%;
   padding: 10px;
 }
 
